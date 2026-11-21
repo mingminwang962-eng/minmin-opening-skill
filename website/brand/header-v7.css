@@ -1,0 +1,30 @@
+/* Reading-note paper layout, with the existing yellow tool identity. */
+body{padding:44px 20px 60px;background:#e7e4dc}
+.minmin-tool-sheet{max-width:900px;margin:0 auto;background:#fbfaf7;border:1px solid #d6d0c4;border-top:6px solid #ffdf00;box-shadow:0 24px 60px rgba(30,25,15,.10);position:relative}
+.minmin-brand-header{display:block;position:sticky;top:0;z-index:100;width:100%;margin:0;padding:0 40px;background:#fbfaf7;border:0}
+.minmin-header-main{display:grid;grid-template-columns:112px minmax(0,1fr) auto;align-items:center;gap:16px;border-bottom:1px solid #deded3}
+.minmin-brand-header .brand-home{display:block;min-width:0;text-decoration:none}
+.minmin-brand-header .brand-logo{display:block;width:112px;height:56px;object-fit:contain}
+.minmin-brand-header .home-return,.minmin-brand-header .home-return:visited{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:10px 16px;border:1px solid #cdd0c4;border-radius:24px;background:#f3f3ed;color:#242622;font:600 14px/1.3 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;text-decoration:none;white-space:nowrap;flex:none;transition:background .16s,border-color .16s}
+.minmin-brand-header .home-return span{font-size:19px;line-height:1;color:inherit}
+.minmin-brand-header .home-return:hover{background:#ffdf00;border-color:#d1bf45}
+.minmin-brand-header a:focus-visible{outline:2px solid #987000;outline-offset:4px}
+
+.minmin-tool-nav{display:flex;align-items:center;justify-content:center;gap:4px;min-width:0}
+.minmin-tool-nav a,.minmin-tool-nav a:visited{display:block;flex:none;padding:10px 8px;border-radius:7px;color:#666962;text-decoration:none;white-space:nowrap;font-size:13px;line-height:1.4}
+.minmin-tool-nav a:hover{background:#f0f1e9;color:#242622}
+.minmin-tool-nav a[aria-current="page"],.minmin-tool-nav a[aria-current="page"]:visited{background:#ffdf00;color:#242622;font-weight:650}
+.minmin-tool-sheet main{max-width:none;padding:0 48px 48px}
+@media(max-width:1000px){.minmin-header-main{grid-template-columns:1fr auto;gap:0 16px}.minmin-tool-nav{grid-row:2;grid-column:1/-1;justify-content:flex-start;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}.minmin-tool-nav a,.minmin-tool-nav a:visited{padding:10px 12px}.home-return{grid-row:1;grid-column:2}}
+@media(max-width:720px){.minmin-brand-header{padding:0 20px}.minmin-tool-sheet main{padding:0 26px 36px}}
+@media(max-width:640px){.minmin-brand-header .brand-logo{width:96px;height:48px}.minmin-brand-header .home-return{gap:7px;min-height:40px;padding:10px 12px;font-size:12px}.minmin-tool-nav a,.minmin-tool-nav a:visited{padding:10px 12px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.minmin-brand-header .home-return{transition:none}}
+
+.minmin-tool-sheet .hero{gap:40px;padding-top:48px}
+.minmin-tool-sheet h1{font-size:52px}
+.minmin-tool-sheet .intro{font-size:22px}
+.minmin-tool-sheet .outputs h3{font-size:21px}
+.minmin-tool-sheet .update{gap:30px}
+@media(max-width:820px){body{padding:20px 12px 34px}}
+@media(max-width:720px){.minmin-tool-sheet .hero{padding-top:34px;gap:30px}.minmin-tool-sheet h1{font-size:42px}.minmin-tool-sheet .intro{font-size:20px}}
+@media(max-width:420px){.minmin-tool-sheet main{padding-inline:20px}.minmin-brand-header{padding-inline:14px}.minmin-tool-sheet .outputs{gap:22px 16px}.minmin-tool-sheet .outputs h3{font-size:20px}.minmin-tool-sheet h2{font-size:24px}}
