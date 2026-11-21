@@ -1,0 +1,12 @@
+{
+  "version": "6.9.1",
+  "notice": "名称统一为开头skill，增加使用时更新提醒、确认后升级及个人资料保护。",
+  "download_url": "https://tools.minmin11538.cn/opening/downloads/minmin-opening-skill-v6.9.1.zip",
+  "bytes": 83143,
+  "sha256": "e04c833558c9f06da75ead69def56b7678d96f64feca202b67efb5e13183c32a",
+  "archive_root": "minmin-opening-skill",
+  "skill_entry": "开头skill/SKILL.md",
+  "release_status": "published",
+  "released_at": "2026-11-21",
+  "instructions_url": "https://tools.minmin11538.cn/opening/install.md"
+}
