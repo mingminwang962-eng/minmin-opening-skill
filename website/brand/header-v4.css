@@ -1,0 +1,32 @@
+/* Header brand and return control only; keep the product page's content layout. */
+.minmin-brand-header{display:block;padding:0 0 10px;border-bottom:1px solid #deded3}
+.minmin-brand-header .brand-home{display:flex;align-items:center;gap:20px;min-width:0;color:#242622;text-decoration:none}
+.minmin-brand-header .brand-logo{display:block;width:112px;height:56px;object-fit:contain;flex:none}
+
+
+.minmin-brand-header .home-return,.minmin-brand-header .home-return:visited{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:10px 16px;border:1px solid #cdd0c4;border-radius:24px;background:#f3f3ed;color:#242622;font:600 14px/1.3 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;text-decoration:none;white-space:nowrap;flex:none;transition:background .16s,border-color .16s}
+.minmin-brand-header .home-return span{font-size:19px;line-height:1;color:inherit}
+.minmin-brand-header .home-return:hover{background:#ffdf00;border-color:#d1bf45}
+.minmin-brand-header a:focus-visible{outline:2px solid #987000;outline-offset:4px}
+@media(max-width:640px){.minmin-brand-header{gap:12px;padding-bottom:12px}.minmin-brand-header .brand-logo{width:96px;height:48px}.minmin-brand-header .home-return{gap:7px;min-height:40px;padding:10px 12px;font-size:12px}}
+@media(max-width:350px){.minmin-brand-header .brand-logo{width:96px;height:48px}.minmin-brand-header .home-return{padding:9px 10px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.minmin-brand-header .home-return{transition:none}}
+
+.minmin-header-main{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:0}
+.minmin-product-row{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:58px;border-top:1px solid #e8e9e1;padding-top:8px}
+.minmin-product-identity,.minmin-product-identity:visited{display:flex;align-items:baseline;gap:8px;white-space:nowrap;text-decoration:none;color:#242622;flex:none}
+.minmin-product-identity b{font-size:17px;font-weight:750}
+.minmin-product-identity span{font-size:14px;color:#666962}
+.minmin-tool-nav{display:flex;align-items:center;justify-content:flex-end;gap:5px;min-width:0}
+.minmin-tool-nav a,.minmin-tool-nav a:visited{display:block;padding:10px 12px;border-radius:7px;color:#666962;text-decoration:none;white-space:nowrap;font-size:14px;line-height:1.4}
+.minmin-tool-nav a:hover{background:#f0f1e9;color:#242622}
+.minmin-tool-nav a[aria-current="page"],.minmin-tool-nav a[aria-current="page"]:visited{background:#ffdf00;color:#242622;font-weight:650}
+@media(max-width:900px){.minmin-tool-nav a,.minmin-tool-nav a:visited{font-size:13px;padding:10px 8px}.minmin-product-row{gap:16px}}
+@media(max-width:780px){.minmin-header-main{padding-bottom:0}.minmin-product-row{display:block;min-height:0;padding-top:10px}.minmin-product-identity{display:none}.minmin-tool-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.minmin-tool-nav a,.minmin-tool-nav a:visited{padding:10px 4px;text-align:center;font-size:12px}}
+
+/* Keep only the brand and home return row visible while reading. */
+.minmin-brand-header{position:sticky;top:0;z-index:100;max-width:1120px;margin:0 auto;padding:0 32px;background:#fafaf7;border-bottom:0}
+.minmin-header-main{border-bottom:1px solid #deded3}
+.minmin-product-row{border-top:0}
+main{padding-top:0}
+@media(max-width:720px){.minmin-brand-header{margin-top:0;padding:0 20px}main{padding-top:0}}
