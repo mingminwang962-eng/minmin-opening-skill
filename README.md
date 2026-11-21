@@ -2,7 +2,7 @@
 
 给出正文，获得3个完整口播开头和1个极简短版，并接回正文。
 
-**版本：6.9.1** · 面向支持Skill的AI助手。
+**版本：6.9.2** · 面向支持Skill的AI助手。
 
 - 安装说明：https://tools.minmin11538.cn/opening/
 - 官方版本清单：https://tools.minmin11538.cn/opening/release.json
@@ -36,3 +36,13 @@ Python 3.9+：
 python3 -B -m unittest discover -s tests -v
 python3 -B scripts/build_release.py
 ```
+
+## 联系敏敏
+
+使用中有问题，或想交流新想法？欢迎微信联系。微信号：**min11538**。
+
+![敏敏的微信二维码](contact/wechat-min11538.jpg)
+
+安装页：https://tools.minmin11538.cn/opening/#contact-minmin
+
+联系图片的使用范围见[ASSET-LICENSE.md](ASSET-LICENSE.md)。
