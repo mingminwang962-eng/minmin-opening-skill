@@ -7,9 +7,9 @@ import unittest
 from unittest import mock
 import zipfile
 
-SCRIPT = Path(__file__).resolve().parents[1] / "开头skill/scripts/skill_update.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "min-开头/scripts/skill_update.py"
 ROOT = "minmin-opening-skill"
-ENTRY = ROOT + "/开头skill"
+ENTRY = ROOT + "/min-开头"
 
 
 class SkillUpdateTests(unittest.TestCase):
@@ -17,7 +17,7 @@ class SkillUpdateTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        self.skill = self.root / "skills/开头skill"
+        self.skill = self.root / "skills/min-开头"
         self.skill.mkdir(parents=True)
         (self.skill / "VERSION").write_text("0.9.7")
         (self.skill / "old.txt").write_text("old")
@@ -33,7 +33,7 @@ class SkillUpdateTests(unittest.TestCase):
         with zipfile.ZipFile(out, "w") as archive:
             archive.writestr(ROOT + "/VERSION", version)
             archive.writestr(ENTRY + "/VERSION", version)
-            archive.writestr(ENTRY + "/SKILL.md", "---\nname: 开头skill\n---\n")
+            archive.writestr(ENTRY + "/SKILL.md", "---\nname: min-开头\n---\n")
             archive.writestr(ENTRY + "/scripts/skill_update.py", SCRIPT.read_bytes())
             archive.writestr(ENTRY + "/references/readme.md", "new")
             if extra:
@@ -44,7 +44,7 @@ class SkillUpdateTests(unittest.TestCase):
         return {
             "version": version,
             "archive_root": ROOT,
-            "skill_entry": "开头skill/SKILL.md",
+            "skill_entry": "min-开头/SKILL.md",
             "download_url": self.update.BASE + "downloads/" + self.update.quote(f"{ROOT}-v{version}.zip"),
             "sha256": hashlib.sha256(package).hexdigest(),
             "bytes": len(package),
@@ -106,7 +106,7 @@ class SkillUpdateTests(unittest.TestCase):
         package = self.package()
         rename = Path.rename
         def fail_second(source, destination):
-            if source.parent.name.startswith(".开头skill-update-") and source.name == self.skill.name:
+            if source.parent.name.startswith(".min-开头-update-") and source.name == self.skill.name:
                 raise OSError("replace failed")
             return rename(source, destination)
         with mock.patch.object(self.update, "read_release", return_value=self.release(package)), \
@@ -143,7 +143,7 @@ class SkillUpdateTests(unittest.TestCase):
         self.assertEqual((backup / "references/创作者背书档案.md").read_text(), "this user's verified facts")
 
     def test_symlink_installed_directory_is_rejected(self):
-        link = self.root / "alias" / "开头skill"
+        link = self.root / "alias" / "min-开头"
         link.parent.mkdir()
         link.symlink_to(self.skill, target_is_directory=True)
         with self.assertRaisesRegex(ValueError, "安装目录"):

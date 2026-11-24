@@ -1,4 +1,4 @@
-"""Check and install an approved 开头skill release from its download site."""
+"""Check and install an approved min-开头 release from its download site."""
 
 import argparse
 import hashlib
@@ -17,7 +17,7 @@ import zipfile
 
 BASE = "https://tools.minmin11538.cn/opening/"
 ARCHIVE_ROOT = "minmin-opening-skill"
-SKILL = "开头skill"
+SKILL = "min-开头"
 SKILL_ENTRY = f"{SKILL}/SKILL.md"
 CHECK_INTERVAL = 24 * 60 * 60
 MAX_PACKAGE_BYTES = 64 * 1024 * 1024
@@ -192,7 +192,7 @@ def main():
         return 0
     except (OSError, KeyError, ValueError, zipfile.BadZipFile, RuntimeError) as error:
         sys.stderr.reconfigure(encoding="utf-8")
-        print(f"开头skill更新失败：{error}", file=sys.stderr)
+        print(f"min-开头更新失败：{error}", file=sys.stderr)
         return 1
 
 

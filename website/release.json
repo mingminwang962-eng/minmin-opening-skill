@@ -1,12 +1,12 @@
 {
-  "version": "6.9.2",
-  "notice": "补齐联系敏敏、复制后的安装指引及包内联系资源；写作规则保持不变。",
-  "download_url": "https://tools.minmin11538.cn/opening/downloads/minmin-opening-skill-v6.9.2.zip",
-  "bytes": 400666,
-  "sha256": "9e92b093ea442eb77497b4f8f7487de0c5484d66e2a68f2099c2e0e5ccb3c952",
+  "version": "6.9.3",
+  "notice": "正式名称改为min-开头；输入/min选中后直接粘贴正文。旧开头skill请按安装说明迁移，保留个人资料。",
+  "download_url": "https://tools.minmin11538.cn/opening/downloads/minmin-opening-skill-v6.9.3.zip",
+  "bytes": 538564,
+  "sha256": "f800147f20d3d025b2af85f86572983003014f2d15c38c93b8c96ee9ff70d495",
   "archive_root": "minmin-opening-skill",
-  "skill_entry": "开头skill/SKILL.md",
+  "skill_entry": "min-开头/SKILL.md",
   "release_status": "published",
-  "released_at": "2026-11-21",
+  "released_at": "2026-11-24",
   "instructions_url": "https://tools.minmin11538.cn/opening/install.md"
 }
