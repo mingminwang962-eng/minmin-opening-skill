@@ -40,8 +40,8 @@
     completion.firstChild.textContent = tool === 'notehelper' ? '按提示接好微信和飞书，转发一条资料并打开飞书验收，再确认定时同步。' : '按助手提示完成安装，等它报告“安装成功”后再试用。';
     completion.querySelector('small').textContent = tool === 'notehelper' ? '下载、安装完成后，还需要授权和同步测试。' : '仅复制口令或打开网页，还没有完成安装。';
     if (tool === 'opening-skill') {
-      completion.firstChild.textContent = '装好后，新建对话，选中「开头skill」，贴入正文开始用。';
-      completion.querySelector('small').textContent = '从「使用技能 / 技能」入口选中；支持 / 选择器的客户端，也可输入 / 后从列表选择。仅安装完成，还需要一次真实试用。';
+      completion.firstChild.textContent = '装好后：新开对话 → 输入 /开头 → 选中「开头skill」→ 粘贴正文发送。';
+      completion.querySelector('small').textContent = '选中后直接贴正文，不用再写提示词。';
     }
     if (!dialog.open) dialog.showModal();
     const notice = document.querySelector('.install-copy-notice');
