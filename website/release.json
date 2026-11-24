@@ -8,5 +8,7 @@
   "skill_entry": "min-开头/SKILL.md",
   "release_status": "published",
   "released_at": "2026-11-24",
-  "instructions_url": "https://tools.minmin11538.cn/opening/install.md"
+  "instructions_url": "https://tools.minmin11538.cn/opening/install.md",
+  "public_version": "V1",
+  "release_number": 1
 }
