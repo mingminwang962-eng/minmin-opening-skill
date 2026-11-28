@@ -2,7 +2,7 @@
   const asset = name => new URL(name, document.currentScript.src).href;
   const qr = asset('wechat-min11538.jpg');
   const mark = asset('bistar-b.png');
-  const names = {'opening-skill':'min-开头','cover-studio':'敏敏封面工作室',matrix:'敏敏矩阵工作台',notehelper:'笔记同步助手','portrait-stickers':'真人互动表情包','personal-ip':'个人 IP 形象'};
+  const names = {'information-packaging-plus':'信息封装 Plus','opening-skill':'min-开头','cover-studio':'敏敏封面工作室',matrix:'敏敏矩阵工作台',notehelper:'敏敏·收藏创作助手','portrait-stickers':'真人互动表情包','personal-ip':'个人 IP 形象'};
   let dialog;
   function openGuide(tool) {
     if (!dialog) {
@@ -40,8 +40,12 @@
     completion.firstChild.textContent = tool === 'notehelper' ? '按提示接好微信和飞书，转发一条资料并打开飞书验收，再确认定时同步。' : '按助手提示完成安装，等它报告“安装成功”后再试用。';
     completion.querySelector('small').textContent = tool === 'notehelper' ? '下载、安装完成后，还需要授权和同步测试。' : '仅复制口令或打开网页，还没有完成安装。';
     if (tool === 'opening-skill') {
-      completion.firstChild.textContent = '装好后：新开对话 → 输入 /min → 选中「min-开头」→ 粘贴正文发送。';
-      completion.querySelector('small').textContent = '选中后直接贴正文，不用再写提示词。';
+      completion.firstChild.textContent = '装好后，需要时新开对话，直接说：用 min-开头，给下面这篇稿子写开头。再粘贴正文。';
+      completion.querySelector('small').textContent = '也可从“技能／使用技能”列表选中后直接贴稿；出现3个完整开头＋1个极简版和正文承接才算首用通过。';
+    }
+    if (tool === 'information-packaging-plus') {
+      completion.firstChild.textContent = '装好后，需要时新开对话，直接说：用信息封装 Plus 帮我处理下面这篇稿子。再粘贴原稿。';
+      completion.querySelector('small').textContent = '先看到理解和词句候选，选择后得到成稿与逐处改动；未实际调用时仍待验证。';
     }
     if (!dialog.open) dialog.showModal();
     const notice = document.querySelector('.install-copy-notice');
