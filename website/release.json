@@ -1,26 +1,26 @@
 {
-  "version": "6.9.4",
-  "notice": "新增可选身份梳理与人物资料联动；自然语言即可开始。旧更新器只更新开头，身份技能请按完整安装口令补齐。",
-  "download_url": "https://tools.minmin11538.cn/opening/downloads/minmin-opening-skill-v6.9.4.zip",
-  "bytes": 3802951,
-  "sha256": "63a4b1ba9454e25459d41ca924fa3a0324560b582a0f32fe6935bae86ec07867",
+  "version": "6.9.5",
+  "notice": "保留身份联动与自然语言首用引导；附带身份技能统一名为min-开头身份梳理，恢复原有开头插画。",
+  "download_url": "https://tools.minmin11538.cn/opening/downloads/minmin-opening-skill-v6.9.5.zip",
+  "bytes": 4183521,
+  "sha256": "5b3812e54451d394de4bd4b11745d8441f2f9c51c5c23ad1077a6fc3a2fe14c7",
   "archive_root": "minmin-opening-skill",
   "skill_entry": "min-开头/SKILL.md",
   "skills": [
     {
       "name": "min-开头",
       "path": "min-开头",
-      "version": "6.9.4"
+      "version": "6.9.5"
     },
     {
-      "name": "开头身份梳理",
-      "path": "开头身份梳理",
-      "version": "1.3.0",
+      "name": "min-开头身份梳理",
+      "path": "min-开头身份梳理",
+      "version": "1.3.1",
       "optional_use": true
     }
   ],
   "release_status": "published",
   "released_at": "2026-11-28",
-  "release_number": 2,
+  "release_number": 3,
   "instructions_url": "https://tools.minmin11538.cn/opening/install.md"
 }

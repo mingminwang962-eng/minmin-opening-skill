@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-28",
+  "public_name": "min-开头",
+  "revision": "user-approved naming and illustration correction",
+  "unchanged": [
+    "creative workflow",
+    "private manuscripts",
+    "original licenses",
+    "previous immutable release artifacts"
+  ],
+  "old_generation_records": "Original prompt.txt and original.png retained as actual prior-generation history; they are not the currently displayed illustration.",
+  "method": "restore existing author-approved official artwork without regeneration",
+  "web": "website/images/illustration-original.webp",
+  "original": "illustration/restored-opening-original.webp",
+  "original_source": "https://me.minmin11538.cn/resource-previews/opening-skill-illustration-v1.webp",
+  "homepage_art": "https://me.minmin11538.cn/resource-previews/skill-cards-20261125/opening-skill.webp",
+  "review": "User explicitly requested the same previously used images; restored bytes unchanged."
+}

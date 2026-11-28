@@ -4,7 +4,7 @@
   "skill": "min-开头",
   "slug": "opening",
   "archive": "minmin-opening-skill",
-  "version": "6.9.4",
-  "release_number": 2,
-  "notice": "新增可选身份梳理与人物资料联动；自然语言即可开始。旧更新器只更新开头，身份技能请按完整安装口令补齐。"
+  "version": "6.9.5",
+  "release_number": 3,
+  "notice": "保留身份联动与自然语言首用引导；附带身份技能统一名为min-开头身份梳理，恢复原有开头插画。"
 }

@@ -2,7 +2,7 @@
   const asset = name => new URL(name, document.currentScript.src).href;
   const qr = asset('wechat-min11538.jpg');
   const mark = asset('bistar-b.png');
-  const names = {'information-packaging-plus':'信息封装 Plus','opening-skill':'min-开头','cover-studio':'敏敏封面工作室',matrix:'敏敏矩阵工作台',notehelper:'敏敏·收藏创作助手','portrait-stickers':'真人互动表情包','personal-ip':'个人 IP 形象'};
+  const names = {'information-packaging-plus':'min-信息封装','opening-skill':'min-开头','cover-studio':'敏敏封面工作室',matrix:'敏敏矩阵工作台',notehelper:'敏敏·收藏创作助手','portrait-stickers':'真人互动表情包','personal-ip':'个人 IP 形象'};
   let dialog;
   function openGuide(tool) {
     if (!dialog) {
@@ -44,7 +44,7 @@
       completion.querySelector('small').textContent = '也可从“技能／使用技能”列表选中后直接贴稿；出现3个完整开头＋1个极简版和正文承接才算首用通过。';
     }
     if (tool === 'information-packaging-plus') {
-      completion.firstChild.textContent = '装好后，需要时新开对话，直接说：用信息封装 Plus 帮我处理下面这篇稿子。再粘贴原稿。';
+      completion.firstChild.textContent = '装好后，需要时新开对话，直接说：用min-信息封装 帮我处理下面这篇稿子。再粘贴原稿。';
       completion.querySelector('small').textContent = '先看到理解和词句候选，选择后得到成稿与逐处改动；未实际调用时仍待验证。';
     }
     if (!dialog.open) dialog.showModal();
