@@ -2,8 +2,8 @@
   "version": "6.9.4",
   "notice": "新增可选身份梳理与人物资料联动；自然语言即可开始。旧更新器只更新开头，身份技能请按完整安装口令补齐。",
   "download_url": "https://tools.minmin11538.cn/opening/downloads/minmin-opening-skill-v6.9.4.zip",
-  "bytes": 3802741,
-  "sha256": "2628d65bed4f075c80508580676739a0db3597e566fc0674f74f7d14b6124ac3",
+  "bytes": 3802951,
+  "sha256": "63a4b1ba9454e25459d41ca924fa3a0324560b582a0f32fe6935bae86ec07867",
   "archive_root": "minmin-opening-skill",
   "skill_entry": "min-开头/SKILL.md",
   "skills": [
